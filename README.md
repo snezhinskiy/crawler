@@ -40,6 +40,9 @@ data highways and buffers:
 <a href="https://github.com/snezhinskiy/crawler/blob/main/src/main/java/com/snezhinskiy/crawler/processing/service/impl/InMemoryCrawlerJobService.java">InMemoryCrawlerJobService</a>, 
 <a href="https://github.com/snezhinskiy/crawler/blob/main/src/main/java/com/snezhinskiy/crawler/processing/service/impl/InMemoryLinksParserJobService.java">InMemoryLinksParserJobService</a>, 
 <a href="https://github.com/snezhinskiy/crawler/blob/main/src/main/java/com/snezhinskiy/crawler/processing/service/impl/InMemoryContentParserJobService.java">InMemoryContentParserJobService</a>.
+<br>
+<img src="https://github.com/snezhinskiy/crawler/blob/main/scheme.jpg" />
+<br>
 
 <h3>Flexibility and scalability</h3>
 I want to point out separately that, since the project is non-commercial, I limited 
