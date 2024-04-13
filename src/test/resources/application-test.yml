@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:15-alpine:///test_database
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    username: test
+    password: test
+
+    jpa:
+      database: postgresql
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      show-sql: true
+
+  flyway:
+    enabled: true
+
+run-crawler-services: false
+
+logging:
+  level:
+    root: INFO
+    org.flywaydb: debug

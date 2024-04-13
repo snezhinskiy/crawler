@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+
+  pg_crawler:
+    image: 'postgres:15-alpine'
+    container_name: pg_crawler
+    ports:
+      - "5447:5432"
+    environment:
+      - POSTGRES_DB=crawler
+      - POSTGRES_USER=crawler_user
+      - POSTGRES_PASSWORD=crawler_password

@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.1.102:5447/crawler
+    driver-class-name: org.postgresql.Driver
+    username: crawler_user
+    password: crawler_password
+
+  flyway:
+    url: jdbc:postgresql://192.168.1.102:5447/crawler
+    user: crawler_user
+    password: crawler_password
+
+crawler:
+  max-workers: 5
+  user-agent: "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.123 Mobile Safari/537.36 (compatible; Googlebot/2.1;)"
+  timeout: 5000
+  referer: "http://www.google.com/bot.html"
+
+
+links-parser:
+  max-workers: 5
+  idle-timeout: 3000
+
+max-simultaneous-jobs: 2
+
+logging:
+  level:
+    root: INFO
+    com.snezhinskiy.crawler: TRACE
+    org.hibernate: INFO
